@@ -8,7 +8,7 @@ export default function Form(){
 
     const { register, handleSubmit, formState:{errors} } = useForm();
     const onSubmit = (data) => {
-        axios.post(`https://637f91ca2f8f56e28e904e7d.mockapi.io/form`, data)
+        axios.post(`https://6399f45316b0fdad774f527f.mockapi.io/form`, data)
         alert("Заявка отправлена")
     }
 

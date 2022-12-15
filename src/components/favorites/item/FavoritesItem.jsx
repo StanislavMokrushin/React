@@ -26,7 +26,7 @@ const FavoritesItem = (props) => {
             onClick={onDelete}>
                 X
             </button>
-
+            {/* // eslint-disable-next-line */}
             <img className={style.cart_img} src={props.img}></img>
             <p className={style.cart_title}>{props.title} </p>
             <p className={style.cart_description}>Сочи Из Москва - 7 Ночей

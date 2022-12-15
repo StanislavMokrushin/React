@@ -27,9 +27,9 @@ function App() {
 
         async function axiosData(){
             
-            const tyrsData = await axios.get('https://637f91ca2f8f56e28e904e7d.mockapi.io/tyrs')
-            const cartData = await axios.get('https://637f91ca2f8f56e28e904e7d.mockapi.io/cart')
-            const favoritesData = await axios.get('https://637f91ca2f8f56e28e904e7d.mockapi.io/favorites')
+            const tyrsData = await axios.get('https://6399f45316b0fdad774f527f.mockapi.io/tyrs')
+            const cartData = await axios.get('https://6399f45316b0fdad774f527f.mockapi.io/cart')
+            const favoritesData = await axios.get('https://6399f45316b0fdad774f527f.mockapi.io/favorites')
     
               setTyrs(tyrsData.data)
               setOverlayItems(cartData.data)
@@ -43,7 +43,7 @@ function App() {
 
     const deleteItems=(id)=>{
         console.log(id);
-        axios.delete(`https://637f91ca2f8f56e28e904e7d.mockapi.io/cart/${id}`)
+        axios.delete(`https://6399f45316b0fdad774f527f.mockapi.io/cart${id}`)
         setOverlayItems((objDelete)=> objDelete.filter(item => item.id !== id))
     }
 
